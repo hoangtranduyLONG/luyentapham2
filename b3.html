@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ip = +prompt("Nhập số")
+
+    function tinhLuuThua(ip) {
+        let s = 1;
+        for (let i = 1; i <= ip; i++) {
+            s *= i;
+        }
+        return s;
+    }
+    alert("Lữy thừa: " + tinhLuuThua(ip));
+</script>
+</body>
+</html>

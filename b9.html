@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ip = prompt("Nhập chuỗi ")
+    let c = prompt("Nhập ký tự")
+
+    function searchChar(ip) {
+        let arrip = ip.split(", ")
+        let dem = 0;
+        for (let i = 0; i < arrip.length; i++) {
+            if (arrip[i] === c) {
+                dem += -1;
+            }
+        }
+        return dem;
+    }
+    alert(searchChar(ip))
+</script>
+</body>
+</html>
